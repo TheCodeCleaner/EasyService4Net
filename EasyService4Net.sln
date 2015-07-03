@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyService4Net", "EasyService4Net\EasyService4Net.csproj", "{F638D0F4-4505-4CA6-992D-A76683F5BC5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyService4Net.Example", "EasyService4Net.Example\EasyService4Net.Example.csproj", "{DA4B7970-44D3-4F2F-9132-922C1BB2FE27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F638D0F4-4505-4CA6-992D-A76683F5BC5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F638D0F4-4505-4CA6-992D-A76683F5BC5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F638D0F4-4505-4CA6-992D-A76683F5BC5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F638D0F4-4505-4CA6-992D-A76683F5BC5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA4B7970-44D3-4F2F-9132-922C1BB2FE27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA4B7970-44D3-4F2F-9132-922C1BB2FE27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA4B7970-44D3-4F2F-9132-922C1BB2FE27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA4B7970-44D3-4F2F-9132-922C1BB2FE27}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
