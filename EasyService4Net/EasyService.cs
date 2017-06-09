@@ -98,6 +98,9 @@ namespace EasyService4Net
 
         private void UnInstallService()
         {
+            if (!_serviceManager.IsInstalled())
+                return;
+
             _serviceManager.Stop();
             _registryManipulator.RemoveMinusServiceFromRegistry();
             _serviceManager.UnInstall();

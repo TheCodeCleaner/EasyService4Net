@@ -25,6 +25,22 @@ namespace EasyService4Net
 
         #region Internal
 
+        internal bool IsInstalled()
+        {
+            using (var controller = new ServiceController(_serviceDisplayName))
+            {
+                try
+                {
+                    var status = controller.Status;
+                }
+                catch (Exception)
+                {
+                    return false;
+                }
+                return true;
+            }
+        }
+
         internal void Install()
         {
             if (IsInstalled()) return;
@@ -89,22 +105,6 @@ namespace EasyService4Net
         {
             var serviceExeName = Assembly.GetEntryAssembly().ManifestModule.Name;
             return new AssemblyInstaller(serviceExeName, null) { UseNewContext = true };
-        }
-
-        private bool IsInstalled()
-        {
-            using (var controller = new ServiceController(_serviceDisplayName))
-            {
-                try
-                {
-                    var status = controller.Status;
-                }
-                catch (Exception)
-                {
-                    return false;
-                }
-                return true;
-            }
         }
 
         #endregion
